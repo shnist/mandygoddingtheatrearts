@@ -1,0 +1,111 @@
+// ############ SPACING DOCUMENTATION ############
+
+// Where property is one of:
+//   m - for classes that set margin
+//   p - for classes that set padding
+
+// Where sides is one of:
+//   t - for classes that set margin-top or padding-top
+//   b - for classes that set margin-bottom or padding-bottom
+//   l - for classes that set margin-left or padding-left
+//   r - for classes that set margin-right or padding-right
+//   x - for classes that set both *-left and *-right
+//   y - for classes that set both *-top and *-bottom
+//   a - for classes that set a margin or padding on all 4 sides of the element
+// # For use with margins only:
+//   auto - for classes that set margin auto (m-x-auto: horizontal centering)
+
+// Where size is one of:
+//   xs - for tiny spacing
+//   sm - for small spacing
+//   md - for medium spacing
+//   lg - for large spacing
+//   xl - for extra large spacing
+
+// Example:
+//   m-t-sm:
+//     margin-top: 10px
+//   m-a-md:
+//     margin: 20px
+//   m-x-xs:
+//     margin-left: 5px
+//     margin-right: 5px
+
+//   p-t-sm:
+//     padding-top: 10px
+//   p-a-md:
+//     padding: 20px
+//   p-x-xs:
+//     padding-left: 5px
+//     padding-right: 5px
+
+
+// Stolen from Bootstrap 4
+// http://v4-alpha.getbootstrap.com/components/utilities/#spacing
+
+$spacing: ('0': 0, 'xs': 5px, 'sm': 10px, 'md': 20px, 'lg': 30px, 'xl': 40px, 'xxl': 50px, 'auto': auto);
+
+@each $size, $pixels in $spacing {
+  %m-t-#{$size} {
+    margin-top: $pixels;
+  }
+
+  %m-b-#{$size} {
+    margin-bottom: $pixels;
+  }
+
+  %m-l-#{$size} {
+    margin-left: $pixels;
+  }
+
+  %m-r-#{$size} {
+    margin-right: $pixels;
+  }
+
+  %m-x-#{$size} {
+    margin-left: $pixels;
+    margin-right: $pixels;
+  }
+
+  %m-y-#{$size} {
+    margin-bottom: $pixels;
+    margin-top: $pixels;
+  }
+
+  %m-a-#{$size} {
+    margin: $pixels;
+  }
+
+}
+
+@each $size, $pixels in $spacing {
+  %p-t-#{$size}  {
+    padding-top: $pixels;
+  }
+
+  %p-b-#{$size} {
+    padding-bottom: $pixels;
+  }
+
+  %p-l-#{$size} {
+    padding-left: $pixels;
+  }
+
+  %p-r-#{$size} {
+    padding-right: $pixels;
+  }
+
+  %p-x-#{$size} {
+    padding-left: $pixels;
+    padding-right: $pixels;
+  }
+
+  %p-y-#{$size} {
+    padding-bottom: $pixels;
+    padding-top: $pixels;
+  }
+
+  %p-a-#{$size} {
+    padding: $pixels;
+  }
+}

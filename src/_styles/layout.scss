@@ -1,0 +1,8 @@
+body {
+    background: $color-primary;
+}
+
+.wrapper {
+    @extend %p-a-md;
+    background: $color-light;
+}

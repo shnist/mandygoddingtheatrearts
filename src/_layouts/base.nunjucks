@@ -1,0 +1,64 @@
+{# Custom Configuration #}
+{% block config %}
+  {# Setup site's base URL to match the "baseUrl" key within `package.json` #}
+  {# Otherwise default to relative pathing #}
+  {% set baseUrl = config.baseUrl or './' %}
+{% endblock %}
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+  <head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <title>Mandy Godding's Theatre Arts: Dance and Singing School in Gloucester</title>
+    <meta name="description" content="We are a long established dedicated Theatre Arts School located in the centre of Gloucester,
+			offering a range of dance and singing lessons. With over 25 years experience, we offer a comprehensive education in the performing arts."/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link href="http://fonts.googleapis.com/css?family=Roboto|Roboto+Condensed|Alegreya:700" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="{{baseUrl}}styles/main.css"/>
+    {% block stylesheets %}{% endblock %}
+
+  </head>
+  <body>
+    <!--[if lt IE 11]>
+    <p class="browsehappy">
+      You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.
+    </p>
+    <![endif]-->
+
+    <nav>
+      {% for val in site.data.menu %}
+      <a href="{{val.href}}">{{ val.name }}</a>
+      {% endfor %}
+    </ul>
+
+    <div class="wrapper">
+      {% block content %}{% endblock %}
+    </div>
+
+    <footer>
+      <div class="vcard">
+        <abbr class="fn org" title="Mandy Godding's Theatre Arts">Mandy Godding's Theatre Arts</abbr>
+        <address class="adr">
+          <span class="street-address">1 St Johns Lane</span>
+          <span class="locality">Gloucester</span>
+          <span class="postal-code">GL1 2AT</span>
+        <address>
+        <a class="tel" href="tel:01452424348">01452424348</a>
+        <a class="email" href="mailto:mandygodding@yahoo.co.uk">mandygodding@yahoo.co.uk</a>
+        <span>For specific enquiries about singing and drama lessons:</span>
+        <a class="email" href="mailto:singing4stage@yahoo.co.uk">singing4stage@yahoo.co.uk</a>
+      </div>
+      <img src="_images/bbo_logo.jpg" alt="British Ballet Organisation">
+      <img src="_images/istd_logo.jpg" alt="Imperial Society of Teachers of Dancing">
+      <div>
+				<small> Mandy Godding's Theatre Arts Ltd. © 2010 - 2015</small>
+				<small> Established 1984 </small>
+			</div>
+    </footer>
+
+    <script src="{{baseUrl}}scripts/main.js"></script>
+    {% block scripts %}{% endblock %}
+  </body>
+</html>

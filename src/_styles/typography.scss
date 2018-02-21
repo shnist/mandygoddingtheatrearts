@@ -1,0 +1,87 @@
+
+body {
+    color: $color-dark;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1,
+[h1],
+.h1,
+%h1 {
+    font-family: 'Alegreya', serif;
+    font-size: 27px;
+    font-weight: 500;
+
+    &[large] {
+        font-size: 70px;
+        font-weight: 300;
+        line-height: .71;
+    }
+}
+
+h2,
+.h2,
+[h2],
+%h2 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
+    font-weight: 300;
+}
+
+h3,
+.h3,
+[h3],
+%h3 {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+h4,
+.h4,
+[h4],
+%h4 {
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+h5,
+.h5,
+[h5],
+%h5 {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 21px;
+}
+
+h6,
+.h6,
+[h6],
+%h6 {
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 19px;
+}
+
+a {
+    color: $color-primary;
+}
+
+.b1,
+[b1],
+%b1 {
+  font-size: 15px;
+  font-weight: 300;
+  line-height: 21px;
+}
+
+.b2,
+[b2],
+%b2 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 21px;
+}
+

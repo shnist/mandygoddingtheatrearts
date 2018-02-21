@@ -1,0 +1,50 @@
+{% extends '_layouts/base.nunjucks' %}
+
+
+{% block content %}
+<h1>Welcome to Mandy Godding’s Theatre Arts</h1>
+<p>
+  We are a long established dedicated Theatre Arts School located in the centre of Gloucester.
+  With over 30 years experience we offer a comprehensive education in the performing arts.
+</p>
+<p>
+  At Mandy Goddings Theatre Arts you can choose to specialise in dance, singing or acting, but we pride ourselves on
+  addressing all performance disciplines with equal priority. No other school in Gloucestershire provides an equally
+  high level of training in all three disciplines.
+</p>
+<p>
+  Highly experienced teachers with professional experience work with students to give them the tools to take their skills
+  to the next level as well as build confidence and assertion. Our friendly, approachable staff encourage every child to
+  reach their full potential.
+</p>
+<p>
+  Classes are available in ballet, tap, modern, jazz, street, singing and drama, as well as providing the opportunity to work
+  on productions, which hold the same demands as professional theatre.
+</p>
+<p>
+  We provide training for everyone from the smallest child needing a safe friendly environment to learn, to those wishing to follow
+  a career in the performing arts.
+</p>
+<p>
+  If you would like to find out whether we can accommodate for your individual needs, please visit our <a href="contact">contact page</a>.
+</p>
+<h2>Why Choose Mandy Godding’s Theatre Arts?</h2>
+<p>
+  Mandy Godding's Theatre Arts is the most comprehensive theatre arts school in Gloucestershire. We are the school that has had the highest
+  professional success rate in producing a wealth of working artists within the show business industry. With our links to theatrical institutions
+  and the West End, Mandy Godding’s Theatre Arts is the best place to start your education and progress into professional performance.
+  The most nervous pupils are encouraged to find the confidence to perform and have fun!
+</p>
+<p>
+  No other school writes, designs and produces a unique Annual Musical that make a lifetime of memories.
+</p>
+<p>
+  With studios in the centre of Gloucester and branches in Longlevens and Abbeydale, we are easily accessible.
+</p>
+<p>
+  We can help with applications for scholarships and bursaries and have generated over £2,000,000 in student awards.
+</p>
+<p>
+  We stand by our experience, and that means everything in deciding the right school for you and your children!
+</p>
+{% endblock %}
